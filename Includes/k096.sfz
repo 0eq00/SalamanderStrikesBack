@@ -1,0 +1,143 @@
+amp_velcurve_1=0.91276
+amp_velcurve_2=0.91609
+amp_velcurve_3=0.91945
+amp_velcurve_4=0.92281
+amp_velcurve_5=0.92619
+amp_velcurve_6=0.92957
+amp_velcurve_7=0.93297
+amp_velcurve_8=0.93639
+amp_velcurve_9=0.93981
+amp_velcurve_10=0.94325
+amp_velcurve_11=0.9467
+amp_velcurve_12=0.95016
+amp_velcurve_13=0.95364
+amp_velcurve_14=0.95713
+amp_velcurve_15=0.96063
+amp_velcurve_16=0.96414
+amp_velcurve_17=0.96767
+amp_velcurve_18=0.97121
+amp_velcurve_19=0.97476
+amp_velcurve_20=0.97833
+amp_velcurve_21=0.98191
+amp_velcurve_22=0.9855
+amp_velcurve_23=0.98911
+amp_velcurve_24=0.99272
+amp_velcurve_25=0.99636
+amp_velcurve_26=1
+amp_velcurve_27=0.85988
+amp_velcurve_28=0.87862
+amp_velcurve_29=0.89778
+amp_velcurve_30=0.91735
+amp_velcurve_31=0.93735
+amp_velcurve_32=0.95778
+amp_velcurve_33=0.97866
+amp_velcurve_34=1
+amp_velcurve_35=0.75802
+amp_velcurve_36=1
+amp_velcurve_37=0.72944
+amp_velcurve_38=0.76882
+amp_velcurve_39=0.81032
+amp_velcurve_40=0.85407
+amp_velcurve_41=0.90018
+amp_velcurve_42=0.94878
+amp_velcurve_43=1
+amp_velcurve_44=0.91482
+amp_velcurve_45=0.95646
+amp_velcurve_46=1
+amp_velcurve_47=0.80321
+amp_velcurve_48=0.86408
+amp_velcurve_49=0.92956
+amp_velcurve_50=1
+amp_velcurve_51=0.92504
+amp_velcurve_52=0.93956
+amp_velcurve_53=0.95432
+amp_velcurve_54=0.96931
+amp_velcurve_55=0.98454
+amp_velcurve_56=1
+amp_velcurve_57=0.79174
+amp_velcurve_58=0.8186
+amp_velcurve_59=0.84637
+amp_velcurve_60=0.87508
+amp_velcurve_61=0.90476
+amp_velcurve_62=0.93546
+amp_velcurve_63=0.96719
+amp_velcurve_64=1
+amp_velcurve_65=0.9716
+amp_velcurve_66=0.97561
+amp_velcurve_67=0.97963
+amp_velcurve_68=0.98367
+amp_velcurve_69=0.98773
+amp_velcurve_70=0.9918
+amp_velcurve_71=0.99589
+amp_velcurve_72=1
+amp_velcurve_73=0.88899
+amp_velcurve_74=0.90406
+amp_velcurve_75=0.91939
+amp_velcurve_76=0.93497
+amp_velcurve_77=0.95082
+amp_velcurve_78=0.96694
+amp_velcurve_79=0.98333
+amp_velcurve_80=1
+amp_velcurve_81=0.85443
+amp_velcurve_82=0.87385
+amp_velcurve_83=0.89371
+amp_velcurve_84=0.91403
+amp_velcurve_85=0.9348
+amp_velcurve_86=0.95605
+amp_velcurve_87=0.97778
+amp_velcurve_88=1
+amp_velcurve_89=0.91897
+amp_velcurve_90=0.93013
+amp_velcurve_91=0.94143
+amp_velcurve_92=0.95286
+amp_velcurve_93=0.96443
+amp_velcurve_94=0.97615
+amp_velcurve_95=0.988
+amp_velcurve_96=1
+amp_velcurve_97=0.74545
+amp_velcurve_98=0.7774
+amp_velcurve_99=0.81072
+amp_velcurve_100=0.84546
+amp_velcurve_101=0.8817
+amp_velcurve_102=0.91949
+amp_velcurve_103=0.9589
+amp_velcurve_104=1
+amp_velcurve_105=0.88374
+amp_velcurve_106=0.89949
+amp_velcurve_107=0.91551
+amp_velcurve_108=0.93181
+amp_velcurve_109=0.94841
+amp_velcurve_110=0.96531
+amp_velcurve_111=0.9825
+amp_velcurve_112=1
+amp_velcurve_113=0.84477
+amp_velcurve_114=0.86537
+amp_velcurve_115=0.88648
+amp_velcurve_116=0.9081
+amp_velcurve_117=0.93025
+amp_velcurve_118=0.95295
+amp_velcurve_119=0.97619
+amp_velcurve_120=1
+amp_velcurve_121=0.89047
+amp_velcurve_122=0.90785
+amp_velcurve_123=0.92557
+amp_velcurve_124=0.94365
+amp_velcurve_125=0.96207
+amp_velcurve_126=0.98085
+amp_velcurve_127=1
+<region> sample=C7v1.flac lovel=1 hivel=26
+<region> sample=C7v2.flac lovel=27 hivel=34
+<region> sample=C7v3.flac lovel=35 hivel=36
+<region> sample=C7v4.flac lovel=37 hivel=43
+<region> sample=C7v5.flac lovel=44 hivel=46
+<region> sample=C7v6.flac lovel=47 hivel=50
+<region> sample=C7v7.flac lovel=51 hivel=56
+<region> sample=C7v8.flac lovel=57 hivel=64
+<region> sample=C7v9.flac lovel=65 hivel=72
+<region> sample=C7v10.flac lovel=73 hivel=80
+<region> sample=C7v11.flac lovel=81 hivel=88
+<region> sample=C7v12.flac lovel=89 hivel=96
+<region> sample=C7v13.flac lovel=97 hivel=104
+<region> sample=C7v14.flac lovel=105 hivel=112
+<region> sample=C7v15.flac lovel=113 hivel=120
+<region> sample=C7v16.flac lovel=121 hivel=127

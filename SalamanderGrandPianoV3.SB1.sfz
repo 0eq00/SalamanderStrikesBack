@@ -1,0 +1,365 @@
+//=====================================
+// Salamander Grand Piano V3
+// 
+// Author: Alexander Holm
+// Contact: axeldenstore [at] gmail [dot] com
+// License: CC-by
+// 
+//=====================================
+// Salamander Grand Piano V3 Strikes Back - 2023/11/30
+// 
+// ++Simulated soft pedal
+// ++Simulated half damper pedal
+// ++smooth switch between VLs with amp_velcurve_N
+// flac by roberto@zenvoid.org
+//=====================================
+<control>
+default_path=samples/
+<curve>
+curve_index=11
+v000=0
+v032=0
+v042=.1
+v064=.3
+v072=.4
+v073=1
+v127=1
+//==============================================
+// Pedal up
+<master>
+hicc67=63
+sustain_cc=90 		
+ampeg_dynamic=1  	
+ampeg_release_shape=-6 	
+ampeg_releasecc64=15 	
+ampeg_release_curvecc64=11 
+//==============================================
+<group> key=21 lokey=21 hikey=22 ampeg_release=1 tune=10 group_volume=0
+#include "Includes/k021.sfz"
+<group> key=24 lokey=23 hikey=25 ampeg_release=1 tune=13 group_volume=0
+#include "Includes/k024.sfz"
+<group> key=27 lokey=26 hikey=28 ampeg_release=1 tune=11 group_volume=0
+#include "Includes/k027.sfz"
+<group> key=30 lokey=29 hikey=31 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k030.sfz"
+<group> key=33 lokey=32 hikey=34 ampeg_release=1 tune=-9 group_volume=0
+#include "Includes/k033.sfz"
+<group> key=36 lokey=35 hikey=37 ampeg_release=1 tune=-9 group_volume=0
+#include "Includes/k036.sfz"
+<group> key=39 lokey=38 hikey=40 ampeg_release=1 tune=-11 group_volume=0
+#include "Includes/k039.sfz"
+<group> key=42 lokey=41 hikey=43 ampeg_release=1 tune=-7 group_volume=0
+#include "Includes/k042.sfz"
+<group> key=45 lokey=44 hikey=46 ampeg_release=1 tune=-4 group_volume=0
+#include "Includes/k045.sfz"
+<group> key=48 lokey=47 hikey=49 ampeg_release=1 tune=0 group_volume=0
+#include "Includes/k048.sfz"
+<group> key=51 lokey=50 hikey=52 ampeg_release=1 tune=-6 group_volume=0
+#include "Includes/k051.sfz"
+<group> key=54 lokey=53 hikey=55 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k054.sfz"
+<group> key=57 lokey=56 hikey=58 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k057.sfz"
+<group> key=60 lokey=59 hikey=61 ampeg_release=1 tune=-6 group_volume=0
+#include "Includes/k060.sfz"
+<group> key=63 lokey=62 hikey=64 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k063.sfz"
+<group> key=66 lokey=65 hikey=67 ampeg_release=1 tune=0 group_volume=0
+#include "Includes/k066.sfz"
+<group> key=69 lokey=68 hikey=70 ampeg_release=1 tune=-4 group_volume=0
+#include "Includes/k069.sfz"
+<group> key=72 lokey=71 hikey=73 ampeg_release=1 tune=-8 group_volume=0
+#include "Includes/k072.sfz"
+<group> key=75 lokey=74 hikey=76 ampeg_release=1 tune=-8 group_volume=0
+#include "Includes/k075.sfz"
+<group> key=78 lokey=77 hikey=79 ampeg_release=1 tune=-5 group_volume=0
+#include "Includes/k078.sfz"
+<group> key=81 lokey=80 hikey=82 ampeg_release=1 tune=-7 group_volume=0
+#include "Includes/k081.sfz"
+<group> key=84 lokey=83 hikey=85 ampeg_release=1 tune=-8 group_volume=0
+#include "Includes/k084.sfz"
+<group> key=87 lokey=86 hikey=88 ampeg_release=1 tune=-12 group_volume=0
+#include "Includes/k087.sfz"
+<group> key=90 lokey=89 hikey=91 ampeg_release=5 tune=-13 group_volume=0
+#include "Includes/k090.sfz"
+<group> key=93 lokey=92 hikey=94 ampeg_release=5 tune=-12 group_volume=0
+#include "Includes/k093.sfz"
+<group> key=96 lokey=95 hikey=97 ampeg_release=5 tune=-17 group_volume=0
+#include "Includes/k096.sfz"
+<group> key=99 lokey=98 hikey=100 ampeg_release=5 tune=-17 group_volume=0
+#include "Includes/k099.sfz"
+<group> key=102 lokey=101 hikey=103 ampeg_release=5 tune=-27 group_volume=0
+#include "Includes/k102.sfz"
+<group> key=105 lokey=104 hikey=106 ampeg_release=5 tune=-38 group_volume=0
+#include "Includes/k105.sfz"
+<group> key=108 lokey=107 hikey=108 ampeg_release=5 tune=-38 group_volume=0
+#include "Includes/k108.sfz"
+//==============================================
+// Soft pedal down
+<master>
+master_volume=-3.0
+locc67=64
+sustain_cc=90 		
+ampeg_dynamic=1  	
+ampeg_release_shape=-6 	
+ampeg_releasecc64=15 	
+ampeg_release_curvecc64=11 
+//==============================================
+<group> key=21 lokey=21 hikey=22 ampeg_release=1 tune=10 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k021.sfz"
+<group> key=24 lokey=23 hikey=25 ampeg_release=1 tune=13 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k024.sfz"
+<group> key=27 lokey=26 hikey=28 ampeg_release=1 tune=11 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k027.sfz"
+<group> key=30 lokey=29 hikey=31 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k030.sfz"
+<group> key=33 lokey=32 hikey=34 ampeg_release=1 tune=-9 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k033.sfz"
+<group> key=36 lokey=35 hikey=37 ampeg_release=1 tune=-9 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k036.sfz"
+<group> key=39 lokey=38 hikey=40 ampeg_release=1 tune=-11 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k039.sfz"
+<group> key=42 lokey=41 hikey=43 ampeg_release=1 tune=-7 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k042.sfz"
+<group> key=45 lokey=44 hikey=46 ampeg_release=1 tune=-4 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k045.sfz"
+<group> key=48 lokey=47 hikey=49 ampeg_release=1 tune=0 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k048.sfz"
+<group> key=51 lokey=50 hikey=52 ampeg_release=1 tune=-6 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k051.sfz"
+<group> key=54 lokey=53 hikey=55 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k054.sfz"
+<group> key=57 lokey=56 hikey=58 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k057.sfz"
+<group> key=60 lokey=59 hikey=61 ampeg_release=1 tune=-6 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k060.sfz"
+<group> key=63 lokey=62 hikey=64 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k063.sfz"
+<group> key=66 lokey=65 hikey=67 ampeg_release=1 tune=0 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k066.sfz"
+<group> key=69 lokey=68 hikey=70 ampeg_release=1 tune=-4 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k069.sfz"
+<group> key=72 lokey=71 hikey=73 ampeg_release=1 tune=-8 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k072.sfz"
+<group> key=75 lokey=74 hikey=76 ampeg_release=1 tune=-8 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k075.sfz"
+<group> key=78 lokey=77 hikey=79 ampeg_release=1 tune=-5 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k078.sfz"
+<group> key=81 lokey=80 hikey=82 ampeg_release=1 tune=-7 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k081.sfz"
+<group> key=84 lokey=83 hikey=85 ampeg_release=1 tune=-8 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k084.sfz"
+<group> key=87 lokey=86 hikey=88 ampeg_release=1 tune=-12 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k087.sfz"
+<group> key=90 lokey=89 hikey=91 ampeg_release=5 tune=-13 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k090.sfz"
+<group> key=93 lokey=92 hikey=94 ampeg_release=5 tune=-12 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k093.sfz"
+<group> key=96 lokey=95 hikey=97 ampeg_release=5 tune=-17 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k096.sfz"
+<group> key=99 lokey=98 hikey=100 ampeg_release=5 tune=-17 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k099.sfz"
+<group> key=102 lokey=101 hikey=103 ampeg_release=5 tune=-27 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k102.sfz"
+<group> key=105 lokey=104 hikey=106 ampeg_release=5 tune=-38 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k105.sfz"
+<group> key=108 lokey=107 hikey=108 ampeg_release=5 tune=-38 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k108.sfz"
+//==============================================
+<master>
+sustain_cc=90 
+
+//Release string resonances
+<group> trigger=release volume=-4 amp_veltrack=94 rt_decay=6
+
+<region> sample=harmLA0.flac lokey=20 hikey=22 lovel=45 pitch_keycenter=21
+<region> sample=harmLC1.flac lokey=23 hikey=25 lovel=45 pitch_keycenter=24
+<region> sample=harmLD#1.flac lokey=26 hikey=28 lovel=45 pitch_keycenter=27
+//========================
+<group> trigger=release volume=-4 amp_veltrack=94 rt_decay=7
+
+<region> sample=harmLF#1.flac lokey=29 hikey=31 lovel=45 pitch_keycenter=30
+<region> sample=harmLA1.flac lokey=32 hikey=34 lovel=45 pitch_keycenter=33
+<region> sample=harmLC2.flac lokey=35 hikey=37 lovel=45 pitch_keycenter=36
+//========================
+<group> trigger=release volume=-4 amp_veltrack=90 rt_decay=8
+
+<region> sample=harmLD#2.flac lokey=38 hikey=40 lovel=45 pitch_keycenter=39
+<region> sample=harmLF#2.flac lokey=41 hikey=43 lovel=45 pitch_keycenter=42
+<region> sample=harmLA2.flac lokey=44 hikey=46 lovel=45 pitch_keycenter=45
+<region> sample=harmLC3.flac lokey=47 hikey=49 lovel=45 pitch_keycenter=48
+//========================
+<group> trigger=release volume=-4 amp_veltrack=90 rt_decay=9
+
+<region> sample=harmLD#3.flac lokey=50 hikey=52 lovel=45 pitch_keycenter=51
+<region> sample=harmLF#3.flac lokey=53 hikey=55 lovel=45 pitch_keycenter=54
+<region> sample=harmLA3.flac lokey=56 hikey=58 lovel=45 pitch_keycenter=57
+<region> sample=harmLC4.flac lokey=59 hikey=61 lovel=45
+<region> sample=harmLD#4.flac lokey=62 hikey=64 lovel=45 pitch_keycenter=63
+<region> sample=harmLF#4.flac lokey=65 hikey=67 lovel=45 pitch_keycenter=66
+<region> sample=harmLA4.flac lokey=68 hikey=70 lovel=45 pitch_keycenter=69
+<region> sample=harmLC5.flac lokey=71 hikey=73 lovel=45 pitch_keycenter=72
+<region> sample=harmLD#5.flac lokey=74 hikey=76 lovel=45 pitch_keycenter=75
+<region> sample=harmLF#5.flac lokey=77 hikey=79 lovel=45 pitch_keycenter=78
+<region> sample=harmLA5.flac lokey=80 hikey=82 lovel=45 pitch_keycenter=81
+<region> sample=harmLC6.flac lokey=83 hikey=85 lovel=45 pitch_keycenter=84
+<region> sample=harmLD#6.flac lokey=86 hikey=88 lovel=45 pitch_keycenter=87
+//========================
+<group> trigger=release amp_veltrack=95 rt_decay=7
+
+<region> sample=harmSA0.flac lokey=20 hikey=22 hivel=44 pitch_keycenter=21
+<region> sample=harmSC1.flac lokey=23 hikey=25 hivel=44 pitch_keycenter=24
+<region> sample=harmSD#1.flac lokey=26 hikey=28 hivel=44 pitch_keycenter=27
+<region> sample=harmSF#1.flac lokey=29 hikey=31 hivel=44 pitch_keycenter=30
+<region> sample=harmSA1.flac lokey=32 hikey=34 hivel=44 pitch_keycenter=33
+<region> sample=harmSC2.flac lokey=35 hikey=37 hivel=44 pitch_keycenter=36
+<region> sample=harmSD#2.flac lokey=38 hikey=40 hivel=44 pitch_keycenter=39
+<region> sample=harmSF#2.flac lokey=41 hikey=43 hivel=44 pitch_keycenter=42
+//=======================
+<group> trigger=release amp_veltrack=90 rt_decay=7
+
+<region> sample=harmSA2.flac lokey=44 hikey=46 hivel=44 pitch_keycenter=45
+<region> sample=harmSC3.flac lokey=47 hikey=49 hivel=44 pitch_keycenter=48
+<region> sample=harmSD#3.flac lokey=50 hikey=52 hivel=44 pitch_keycenter=51
+<region> sample=harmSF#3.flac lokey=53 hikey=55 hivel=44 pitch_keycenter=54
+<region> sample=harmSA3.flac lokey=56 hikey=58 hivel=44 pitch_keycenter=57
+<region> sample=harmSC4.flac lokey=59 hikey=61 hivel=44
+<region> sample=harmSD#4.flac lokey=62 hikey=64 hivel=44 pitch_keycenter=63
+<region> sample=harmSF#4.flac lokey=65 hikey=67 hivel=44 pitch_keycenter=66
+<region> sample=harmSA4.flac lokey=68 hikey=70 hivel=44 pitch_keycenter=69
+<region> sample=harmSC5.flac lokey=71 hikey=73 hivel=44 pitch_keycenter=72
+<region> sample=harmSD#5.flac lokey=74 hikey=76 hivel=44 pitch_keycenter=75
+<region> sample=harmSF#5.flac lokey=77 hikey=79 hivel=44 pitch_keycenter=78
+<region> sample=harmSA5.flac lokey=80 hikey=82 hivel=44 pitch_keycenter=81
+<region> sample=harmSC6.flac lokey=83 hikey=85 hivel=44 pitch_keycenter=84
+<region> sample=harmSD#6.flac lokey=86 hikey=88 hivel=44 pitch_keycenter=87
+//========================
+<group> trigger=release amp_veltrack=96 rt_decay=2
+
+<region> sample=harmV3A0.flac lokey=20 hikey=22 pitch_keycenter=21
+<region> sample=harmV3C1.flac lokey=23 hikey=25 pitch_keycenter=24
+<region> sample=harmV3D#1.flac lokey=26 hikey=28 pitch_keycenter=27
+<region> sample=harmV3F#1.flac lokey=29 hikey=31 pitch_keycenter=30
+<region> sample=harmV3A1.flac lokey=32 hikey=34 pitch_keycenter=33
+<region> sample=harmV3C2.flac lokey=35 hikey=37 pitch_keycenter=36
+<region> sample=harmV3D#2.flac lokey=38 hikey=40 pitch_keycenter=39
+<region> sample=harmV3F#2.flac lokey=41 hikey=43 pitch_keycenter=42
+<region> sample=harmV3A2.flac lokey=44 hikey=46 pitch_keycenter=45
+<region> sample=harmV3C3.flac lokey=47 hikey=49 pitch_keycenter=48
+<region> sample=harmV3D#3.flac lokey=50 hikey=52 pitch_keycenter=51
+<region> sample=harmV3F#3.flac lokey=53 hikey=55 pitch_keycenter=54
+<region> sample=harmV3A3.flac lokey=56 hikey=58 pitch_keycenter=57
+<region> sample=harmV3C4.flac lokey=59 hikey=61
+<region> sample=harmV3D#4.flac lokey=62 hikey=64 pitch_keycenter=63
+<region> sample=harmV3F#4.flac lokey=65 hikey=67 pitch_keycenter=66
+<region> sample=harmV3A4.flac lokey=68 hikey=70 pitch_keycenter=69
+<region> sample=harmV3C5.flac lokey=71 hikey=73 pitch_keycenter=72
+<region> sample=harmV3D#5.flac lokey=74 hikey=76 pitch_keycenter=75
+<region> sample=harmV3F#5.flac lokey=77 hikey=79 pitch_keycenter=78
+<region> sample=harmV3A5.flac lokey=80 hikey=82 pitch_keycenter=81
+<region> sample=harmV3C6.flac lokey=83 hikey=85 pitch_keycenter=84
+<region> sample=harmV3D#6.flac lokey=86 hikey=88 pitch_keycenter=87
+//======================
+//HammerNoise
+<group> trigger=release pitch_keytrack=0 volume=-37 amp_veltrack=82 rt_decay=2
+
+<region> sample=rel1.flac lokey=21 hikey=21
+<region> sample=rel2.flac lokey=22 hikey=22
+<region> sample=rel3.flac lokey=23 hikey=23
+<region> sample=rel4.flac lokey=24 hikey=24
+<region> sample=rel5.flac lokey=25 hikey=25
+<region> sample=rel6.flac lokey=26 hikey=26
+<region> sample=rel7.flac lokey=27 hikey=27
+<region> sample=rel8.flac lokey=28 hikey=28
+<region> sample=rel9.flac lokey=29 hikey=29
+<region> sample=rel10.flac lokey=30 hikey=30
+<region> sample=rel11.flac lokey=31 hikey=31
+<region> sample=rel12.flac lokey=32 hikey=32
+<region> sample=rel13.flac lokey=33 hikey=33
+<region> sample=rel14.flac lokey=34 hikey=34
+<region> sample=rel15.flac lokey=35 hikey=35
+<region> sample=rel16.flac lokey=36 hikey=36
+<region> sample=rel17.flac lokey=37 hikey=37
+<region> sample=rel18.flac lokey=38 hikey=38
+<region> sample=rel19.flac lokey=39 hikey=39
+<region> sample=rel20.flac lokey=40 hikey=40
+<region> sample=rel21.flac lokey=41 hikey=41
+<region> sample=rel22.flac lokey=42 hikey=42
+<region> sample=rel23.flac lokey=43 hikey=43
+<region> sample=rel24.flac lokey=44 hikey=44
+<region> sample=rel25.flac lokey=45 hikey=45
+<region> sample=rel26.flac lokey=46 hikey=46
+<region> sample=rel27.flac lokey=47 hikey=47
+<region> sample=rel28.flac lokey=48 hikey=48
+<region> sample=rel29.flac lokey=49 hikey=49
+<region> sample=rel30.flac lokey=50 hikey=50
+<region> sample=rel31.flac lokey=51 hikey=51
+<region> sample=rel32.flac lokey=52 hikey=52
+<region> sample=rel33.flac lokey=53 hikey=53
+<region> sample=rel34.flac lokey=54 hikey=54
+<region> sample=rel35.flac lokey=55 hikey=55
+<region> sample=rel36.flac lokey=56 hikey=56
+<region> sample=rel37.flac lokey=57 hikey=57
+<region> sample=rel38.flac lokey=58 hikey=58
+<region> sample=rel39.flac lokey=59 hikey=59
+<region> sample=rel40.flac lokey=60 hikey=60
+<region> sample=rel41.flac lokey=61 hikey=61
+<region> sample=rel42.flac lokey=62 hikey=62
+<region> sample=rel43.flac lokey=63 hikey=63
+<region> sample=rel44.flac lokey=64 hikey=64
+<region> sample=rel45.flac lokey=65 hikey=65
+<region> sample=rel46.flac lokey=66 hikey=66
+<region> sample=rel47.flac lokey=67 hikey=67
+<region> sample=rel48.flac lokey=68 hikey=68
+<region> sample=rel49.flac lokey=69 hikey=69
+<region> sample=rel50.flac lokey=70 hikey=70
+<region> sample=rel51.flac lokey=71 hikey=71
+<region> sample=rel52.flac lokey=72 hikey=72
+<region> sample=rel53.flac lokey=73 hikey=73
+<region> sample=rel54.flac lokey=74 hikey=74
+<region> sample=rel55.flac lokey=75 hikey=75
+<region> sample=rel56.flac lokey=76 hikey=76
+<region> sample=rel57.flac lokey=77 hikey=77
+<region> sample=rel58.flac lokey=78 hikey=78
+<region> sample=rel59.flac lokey=79 hikey=79
+<region> sample=rel60.flac lokey=80 hikey=80
+<region> sample=rel61.flac lokey=81 hikey=81
+<region> sample=rel62.flac lokey=82 hikey=82
+<region> sample=rel63.flac lokey=83 hikey=83
+<region> sample=rel64.flac lokey=84 hikey=84
+<region> sample=rel65.flac lokey=85 hikey=85
+<region> sample=rel66.flac lokey=86 hikey=86
+<region> sample=rel67.flac lokey=87 hikey=87
+<region> sample=rel68.flac lokey=88 hikey=88
+<region> sample=rel69.flac lokey=89 hikey=89
+<region> sample=rel70.flac lokey=90 hikey=90
+<region> sample=rel71.flac lokey=91 hikey=91
+<region> sample=rel72.flac lokey=92 hikey=92
+<region> sample=rel73.flac lokey=93 hikey=93
+<region> sample=rel74.flac lokey=94 hikey=94
+<region> sample=rel75.flac lokey=95 hikey=95
+<region> sample=rel76.flac lokey=96 hikey=96
+<region> sample=rel77.flac lokey=97 hikey=97
+<region> sample=rel78.flac lokey=98 hikey=98
+<region> sample=rel79.flac lokey=99 hikey=99
+<region> sample=rel80.flac lokey=100 hikey=100
+<region> sample=rel81.flac lokey=101 hikey=101
+<region> sample=rel82.flac lokey=102 hikey=102
+<region> sample=rel83.flac lokey=103 hikey=103
+<region> sample=rel84.flac lokey=104 hikey=104
+<region> sample=rel85.flac lokey=105 hikey=105
+<region> sample=rel86.flac lokey=106 hikey=106
+<region> sample=rel87.flac lokey=107 hikey=107
+<region> sample=rel88.flac lokey=108 hikey=108
+//======================
+//pedalAction
+
+<group> group=1 hikey=-1 lokey=-1 on_locc64=126 on_hicc64=127 off_by=2 volume=-20
+
+<region> sample=pedalD1.flac lorand=0 hirand=0.5
+<region> sample=pedalD2.flac lorand=0.5 hirand=1
+
+<group> group=2 hikey=-1 lokey=-1 on_locc64=0 on_hicc64=1 volume=-19
+
+<region> sample=pedalU1.flac lorand=0 hirand=0.5
+<region> sample=pedalU2.flac lorand=0.5 hirand=1

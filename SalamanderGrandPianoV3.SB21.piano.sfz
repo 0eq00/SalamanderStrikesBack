@@ -1,0 +1,168 @@
+//=====================================
+// Salamander Grand Piano V3
+// 
+// Author: Alexander Holm
+// Contact: axeldenstore [at] gmail [dot] com
+// License: CC-by
+// 
+//=====================================
+// Salamander Grand Piano V3 Strikes Back
+// 
+// ++Simulated soft pedal
+// ++Simulated half damper pedal
+// ++smooth switch between VLs with amp_velcurve_N
+// flac by roberto@zenvoid.org
+//=====================================
+<control>
+default_path=samples/
+<curve>
+curve_index=11
+v000=0
+v032=0
+v042=.1
+v064=.3
+v072=.4
+v073=1
+v127=1
+//==============================================
+// Pedal up
+<master>
+hicc67=63
+sustain_cc=90 		
+ampeg_dynamic=1  	
+ampeg_release_shape=-6 	
+ampeg_releasecc64=15 	
+ampeg_release_curvecc64=11 
+//==============================================
+<group> key=21 lokey=21 hikey=22 ampeg_release=1 tune=10 group_volume=0
+#include "Includes/k021.sfz"
+<group> key=24 lokey=23 hikey=25 ampeg_release=1 tune=13 group_volume=0
+#include "Includes/k024.sfz"
+<group> key=27 lokey=26 hikey=28 ampeg_release=1 tune=11 group_volume=0
+#include "Includes/k027.sfz"
+<group> key=30 lokey=29 hikey=31 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k030.sfz"
+<group> key=33 lokey=32 hikey=34 ampeg_release=1 tune=-9 group_volume=0
+#include "Includes/k033.sfz"
+<group> key=36 lokey=35 hikey=37 ampeg_release=1 tune=-9 group_volume=0
+#include "Includes/k036.sfz"
+<group> key=39 lokey=38 hikey=40 ampeg_release=1 tune=-11 group_volume=0
+#include "Includes/k039.sfz"
+<group> key=42 lokey=41 hikey=43 ampeg_release=1 tune=-7 group_volume=0
+#include "Includes/k042.sfz"
+<group> key=45 lokey=44 hikey=46 ampeg_release=1 tune=-4 group_volume=0
+#include "Includes/k045.sfz"
+<group> key=48 lokey=47 hikey=49 ampeg_release=1 tune=0 group_volume=0
+#include "Includes/k048.sfz"
+<group> key=51 lokey=50 hikey=52 ampeg_release=1 tune=-6 group_volume=0
+#include "Includes/k051.sfz"
+<group> key=54 lokey=53 hikey=55 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k054.sfz"
+<group> key=57 lokey=56 hikey=58 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k057.sfz"
+<group> key=60 lokey=59 hikey=61 ampeg_release=1 tune=-6 group_volume=0
+#include "Includes/k060.sfz"
+<group> key=63 lokey=62 hikey=64 ampeg_release=1 tune=-3 group_volume=0
+#include "Includes/k063.sfz"
+<group> key=66 lokey=65 hikey=67 ampeg_release=1 tune=0 group_volume=0
+#include "Includes/k066.sfz"
+<group> key=69 lokey=68 hikey=70 ampeg_release=1 tune=-4 group_volume=0
+#include "Includes/k069.sfz"
+<group> key=72 lokey=71 hikey=73 ampeg_release=1 tune=-8 group_volume=0
+#include "Includes/k072.sfz"
+<group> key=75 lokey=74 hikey=76 ampeg_release=1 tune=-8 group_volume=0
+#include "Includes/k075.sfz"
+<group> key=78 lokey=77 hikey=79 ampeg_release=1 tune=-5 group_volume=0
+#include "Includes/k078.sfz"
+<group> key=81 lokey=80 hikey=82 ampeg_release=1 tune=-7 group_volume=0
+#include "Includes/k081.sfz"
+<group> key=84 lokey=83 hikey=85 ampeg_release=1 tune=-8 group_volume=0
+#include "Includes/k084.sfz"
+<group> key=87 lokey=86 hikey=88 ampeg_release=1 tune=-12 group_volume=0
+#include "Includes/k087.sfz"
+<group> key=90 lokey=89 hikey=91 ampeg_release=5 tune=-13 group_volume=0
+#include "Includes/k090.sfz"
+<group> key=93 lokey=92 hikey=94 ampeg_release=5 tune=-12 group_volume=0
+#include "Includes/k093.sfz"
+<group> key=96 lokey=95 hikey=97 ampeg_release=5 tune=-17 group_volume=0
+#include "Includes/k096.sfz"
+<group> key=99 lokey=98 hikey=100 ampeg_release=5 tune=-17 group_volume=0
+#include "Includes/k099.sfz"
+<group> key=102 lokey=101 hikey=103 ampeg_release=5 tune=-27 group_volume=0
+#include "Includes/k102.sfz"
+<group> key=105 lokey=104 hikey=106 ampeg_release=5 tune=-38 group_volume=0
+#include "Includes/k105.sfz"
+<group> key=108 lokey=107 hikey=108 ampeg_release=5 tune=-38 group_volume=0
+#include "Includes/k108.sfz"
+//==============================================
+// Soft pedal down
+<master>
+master_volume=-3.0
+locc67=64
+sustain_cc=90 		
+ampeg_dynamic=1  	
+ampeg_release_shape=-6 	
+ampeg_releasecc64=15 	
+ampeg_release_curvecc64=11 
+//==============================================
+<group> key=21 lokey=21 hikey=22 ampeg_release=1 tune=10 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k021.sfz"
+<group> key=24 lokey=23 hikey=25 ampeg_release=1 tune=13 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k024.sfz"
+<group> key=27 lokey=26 hikey=28 ampeg_release=1 tune=11 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k027.sfz"
+<group> key=30 lokey=29 hikey=31 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k030.sfz"
+<group> key=33 lokey=32 hikey=34 ampeg_release=1 tune=-9 fil_type=lpf_1p cutoff=1200 group_volume=0
+#include "Includes/k033.sfz"
+<group> key=36 lokey=35 hikey=37 ampeg_release=1 tune=-9 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k036.sfz"
+<group> key=39 lokey=38 hikey=40 ampeg_release=1 tune=-11 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k039.sfz"
+<group> key=42 lokey=41 hikey=43 ampeg_release=1 tune=-7 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k042.sfz"
+<group> key=45 lokey=44 hikey=46 ampeg_release=1 tune=-4 fil_type=lpf_1p cutoff=1300 group_volume=0
+#include "Includes/k045.sfz"
+<group> key=48 lokey=47 hikey=49 ampeg_release=1 tune=0 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k048.sfz"
+<group> key=51 lokey=50 hikey=52 ampeg_release=1 tune=-6 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k051.sfz"
+<group> key=54 lokey=53 hikey=55 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k054.sfz"
+<group> key=57 lokey=56 hikey=58 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1400 group_volume=0
+#include "Includes/k057.sfz"
+<group> key=60 lokey=59 hikey=61 ampeg_release=1 tune=-6 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k060.sfz"
+<group> key=63 lokey=62 hikey=64 ampeg_release=1 tune=-3 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k063.sfz"
+<group> key=66 lokey=65 hikey=67 ampeg_release=1 tune=0 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k066.sfz"
+<group> key=69 lokey=68 hikey=70 ampeg_release=1 tune=-4 fil_type=lpf_1p cutoff=1500 group_volume=0
+#include "Includes/k069.sfz"
+<group> key=72 lokey=71 hikey=73 ampeg_release=1 tune=-8 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k072.sfz"
+<group> key=75 lokey=74 hikey=76 ampeg_release=1 tune=-8 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k075.sfz"
+<group> key=78 lokey=77 hikey=79 ampeg_release=1 tune=-5 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k078.sfz"
+<group> key=81 lokey=80 hikey=82 ampeg_release=1 tune=-7 fil_type=lpf_1p cutoff=1600 group_volume=0
+#include "Includes/k081.sfz"
+<group> key=84 lokey=83 hikey=85 ampeg_release=1 tune=-8 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k084.sfz"
+<group> key=87 lokey=86 hikey=88 ampeg_release=1 tune=-12 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k087.sfz"
+<group> key=90 lokey=89 hikey=91 ampeg_release=5 tune=-13 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k090.sfz"
+<group> key=93 lokey=92 hikey=94 ampeg_release=5 tune=-12 fil_type=lpf_1p cutoff=1700 group_volume=0
+#include "Includes/k093.sfz"
+<group> key=96 lokey=95 hikey=97 ampeg_release=5 tune=-17 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k096.sfz"
+<group> key=99 lokey=98 hikey=100 ampeg_release=5 tune=-17 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k099.sfz"
+<group> key=102 lokey=101 hikey=103 ampeg_release=5 tune=-27 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k102.sfz"
+<group> key=105 lokey=104 hikey=106 ampeg_release=5 tune=-38 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k105.sfz"
+<group> key=108 lokey=107 hikey=108 ampeg_release=5 tune=-38 fil_type=lpf_1p cutoff=1800 group_volume=0
+#include "Includes/k108.sfz"
+//==============================================

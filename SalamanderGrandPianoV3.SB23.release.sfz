@@ -1,0 +1,104 @@
+//==============================================
+<global>
+global_volume=12 group_volume=12
+<control>
+default_path=samples/
+//==============================================
+// Dummy
+<master>
+<region> sample=*silence
+//==============================================
+//Release string resonances
+<master>
+master_volume=12
+
+<group> trigger=release volume=-4 amp_veltrack=94 rt_decay=6
+
+<region> sample=harmLA0.flac lokey=20 hikey=22 lovel=45 pitch_keycenter=21
+<region> sample=harmLC1.flac lokey=23 hikey=25 lovel=45 pitch_keycenter=24
+<region> sample=harmLD#1.flac lokey=26 hikey=28 lovel=45 pitch_keycenter=27
+//========================
+<group> trigger=release volume=-4 amp_veltrack=94 rt_decay=7
+
+<region> sample=harmLF#1.flac lokey=29 hikey=31 lovel=45 pitch_keycenter=30
+<region> sample=harmLA1.flac lokey=32 hikey=34 lovel=45 pitch_keycenter=33
+<region> sample=harmLC2.flac lokey=35 hikey=37 lovel=45 pitch_keycenter=36
+//========================
+<group> trigger=release volume=-4 amp_veltrack=90 rt_decay=8
+
+<region> sample=harmLD#2.flac lokey=38 hikey=40 lovel=45 pitch_keycenter=39
+<region> sample=harmLF#2.flac lokey=41 hikey=43 lovel=45 pitch_keycenter=42
+<region> sample=harmLA2.flac lokey=44 hikey=46 lovel=45 pitch_keycenter=45
+<region> sample=harmLC3.flac lokey=47 hikey=49 lovel=45 pitch_keycenter=48
+//========================
+<group> trigger=release volume=-4 amp_veltrack=90 rt_decay=9
+
+<region> sample=harmLD#3.flac lokey=50 hikey=52 lovel=45 pitch_keycenter=51
+<region> sample=harmLF#3.flac lokey=53 hikey=55 lovel=45 pitch_keycenter=54
+<region> sample=harmLA3.flac lokey=56 hikey=58 lovel=45 pitch_keycenter=57
+<region> sample=harmLC4.flac lokey=59 hikey=61 lovel=45
+<region> sample=harmLD#4.flac lokey=62 hikey=64 lovel=45 pitch_keycenter=63
+<region> sample=harmLF#4.flac lokey=65 hikey=67 lovel=45 pitch_keycenter=66
+<region> sample=harmLA4.flac lokey=68 hikey=70 lovel=45 pitch_keycenter=69
+<region> sample=harmLC5.flac lokey=71 hikey=73 lovel=45 pitch_keycenter=72
+<region> sample=harmLD#5.flac lokey=74 hikey=76 lovel=45 pitch_keycenter=75
+<region> sample=harmLF#5.flac lokey=77 hikey=79 lovel=45 pitch_keycenter=78
+<region> sample=harmLA5.flac lokey=80 hikey=82 lovel=45 pitch_keycenter=81
+<region> sample=harmLC6.flac lokey=83 hikey=85 lovel=45 pitch_keycenter=84
+<region> sample=harmLD#6.flac lokey=86 hikey=88 lovel=45 pitch_keycenter=87
+//========================
+<group> trigger=release amp_veltrack=95 rt_decay=7
+
+<region> sample=harmSA0.flac lokey=20 hikey=22 hivel=44 pitch_keycenter=21
+<region> sample=harmSC1.flac lokey=23 hikey=25 hivel=44 pitch_keycenter=24
+<region> sample=harmSD#1.flac lokey=26 hikey=28 hivel=44 pitch_keycenter=27
+<region> sample=harmSF#1.flac lokey=29 hikey=31 hivel=44 pitch_keycenter=30
+<region> sample=harmSA1.flac lokey=32 hikey=34 hivel=44 pitch_keycenter=33
+<region> sample=harmSC2.flac lokey=35 hikey=37 hivel=44 pitch_keycenter=36
+<region> sample=harmSD#2.flac lokey=38 hikey=40 hivel=44 pitch_keycenter=39
+<region> sample=harmSF#2.flac lokey=41 hikey=43 hivel=44 pitch_keycenter=42
+//=======================
+<group> trigger=release amp_veltrack=90 rt_decay=7
+
+<region> sample=harmSA2.flac lokey=44 hikey=46 hivel=44 pitch_keycenter=45
+<region> sample=harmSC3.flac lokey=47 hikey=49 hivel=44 pitch_keycenter=48
+<region> sample=harmSD#3.flac lokey=50 hikey=52 hivel=44 pitch_keycenter=51
+<region> sample=harmSF#3.flac lokey=53 hikey=55 hivel=44 pitch_keycenter=54
+<region> sample=harmSA3.flac lokey=56 hikey=58 hivel=44 pitch_keycenter=57
+<region> sample=harmSC4.flac lokey=59 hikey=61 hivel=44
+<region> sample=harmSD#4.flac lokey=62 hikey=64 hivel=44 pitch_keycenter=63
+<region> sample=harmSF#4.flac lokey=65 hikey=67 hivel=44 pitch_keycenter=66
+<region> sample=harmSA4.flac lokey=68 hikey=70 hivel=44 pitch_keycenter=69
+<region> sample=harmSC5.flac lokey=71 hikey=73 hivel=44 pitch_keycenter=72
+<region> sample=harmSD#5.flac lokey=74 hikey=76 hivel=44 pitch_keycenter=75
+<region> sample=harmSF#5.flac lokey=77 hikey=79 hivel=44 pitch_keycenter=78
+<region> sample=harmSA5.flac lokey=80 hikey=82 hivel=44 pitch_keycenter=81
+<region> sample=harmSC6.flac lokey=83 hikey=85 hivel=44 pitch_keycenter=84
+<region> sample=harmSD#6.flac lokey=86 hikey=88 hivel=44 pitch_keycenter=87
+//========================
+<group> trigger=release amp_veltrack=96 rt_decay=2
+
+<region> sample=harmV3A0.flac lokey=20 hikey=22 pitch_keycenter=21
+<region> sample=harmV3C1.flac lokey=23 hikey=25 pitch_keycenter=24
+<region> sample=harmV3D#1.flac lokey=26 hikey=28 pitch_keycenter=27
+<region> sample=harmV3F#1.flac lokey=29 hikey=31 pitch_keycenter=30
+<region> sample=harmV3A1.flac lokey=32 hikey=34 pitch_keycenter=33
+<region> sample=harmV3C2.flac lokey=35 hikey=37 pitch_keycenter=36
+<region> sample=harmV3D#2.flac lokey=38 hikey=40 pitch_keycenter=39
+<region> sample=harmV3F#2.flac lokey=41 hikey=43 pitch_keycenter=42
+<region> sample=harmV3A2.flac lokey=44 hikey=46 pitch_keycenter=45
+<region> sample=harmV3C3.flac lokey=47 hikey=49 pitch_keycenter=48
+<region> sample=harmV3D#3.flac lokey=50 hikey=52 pitch_keycenter=51
+<region> sample=harmV3F#3.flac lokey=53 hikey=55 pitch_keycenter=54
+<region> sample=harmV3A3.flac lokey=56 hikey=58 pitch_keycenter=57
+<region> sample=harmV3C4.flac lokey=59 hikey=61
+<region> sample=harmV3D#4.flac lokey=62 hikey=64 pitch_keycenter=63
+<region> sample=harmV3F#4.flac lokey=65 hikey=67 pitch_keycenter=66
+<region> sample=harmV3A4.flac lokey=68 hikey=70 pitch_keycenter=69
+<region> sample=harmV3C5.flac lokey=71 hikey=73 pitch_keycenter=72
+<region> sample=harmV3D#5.flac lokey=74 hikey=76 pitch_keycenter=75
+<region> sample=harmV3F#5.flac lokey=77 hikey=79 pitch_keycenter=78
+<region> sample=harmV3A5.flac lokey=80 hikey=82 pitch_keycenter=81
+<region> sample=harmV3C6.flac lokey=83 hikey=85 pitch_keycenter=84
+<region> sample=harmV3D#6.flac lokey=86 hikey=88 pitch_keycenter=87
+//==============================================

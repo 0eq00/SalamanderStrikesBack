@@ -1,0 +1,24 @@
+//==============================================
+<global>
+global_volume=12 group_volume=12
+<control>
+default_path=samples/
+//==============================================
+// Dummy
+<master>
+<region> sample=*silence
+//==============================================
+//pedalAction
+<master>
+master_volume=12
+
+<group> group=1 hikey=-1 lokey=-1 on_locc64=126 on_hicc64=127 off_by=2 volume=-20
+
+<region> sample=pedalD1.flac lorand=0 hirand=0.5
+<region> sample=pedalD2.flac lorand=0.5 hirand=1
+
+<group> group=2 hikey=-1 lokey=-1 on_locc64=0 on_hicc64=1 volume=-19
+
+<region> sample=pedalU1.flac lorand=0 hirand=0.5
+<region> sample=pedalU2.flac lorand=0.5 hirand=1
+//==============================================

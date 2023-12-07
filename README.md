@@ -1,5 +1,5 @@
 # Salamander Grand Piano V3 Strikes Back
-I customize the famous Salamander Grand Piano V3. I added some features as follows.
+I customize the famous Salamander Grand Piano V3. I added some features as follows.I added some features as follows.I learned about the features from https://pianoclack.com/.
 - simulated soft pedal
 - simulated half damper pedal
 - smooth switching between VLs with amp_velcurve_N

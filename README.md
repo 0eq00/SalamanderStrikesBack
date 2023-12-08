@@ -13,4 +13,4 @@ The orginal Salamander Grand Piano V3
 
 # DEMO
 
-[![salamander-high](https://github.com/0eq00/SalamanderStrikesBack/assets/90118026/b0f386be-81e3-47aa-8d2c-be5e90d8ee7f)](https://vimeo.com/892538372?share=copy)
+[![salamander-high](https://github.com/0eq00/SalamanderStrikesBack/assets/90118026/b0f386be-81e3-47aa-8d2c-be5e90d8ee7f)](https://player.vimeo.com/video/892538372?h=83b6f5d1bd)

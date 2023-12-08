@@ -9,4 +9,4 @@ The orginal Salamander Grand Piano V3
 - Contact: axeldenstore [at] gmail [dot] com
 - License: CC-by
 - Source: https://archive.org/details/SalamanderGrandPianoV3  
-FLAC format version modified by roberto@zenvoid.org is available from: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html.
+- FLAC format version modified by roberto@zenvoid.org is available from: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html.

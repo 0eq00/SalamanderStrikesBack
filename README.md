@@ -12,5 +12,6 @@ The orginal Salamander Grand Piano V3
 - FLAC format version modified by roberto@zenvoid.org is available from: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html.
 
 # DEMO
+> Resonance added using Pianoteq 8. Also added equalizer and reverb.
 
 [![undefined-high](https://github.com/0eq00/SalamanderStrikesBack/assets/90118026/34ed28c4-c8a8-4e2f-8fe7-89b26b69e679)](https://player.vimeo.com/video/892538372)
